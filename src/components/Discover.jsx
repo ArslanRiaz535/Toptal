@@ -1,3 +1,4 @@
+'use client';
 import { Box, Button, Container,  Grid, Typography } from '@mui/material'
 import React from 'react'
 import VerifiedIcon from '@mui/icons-material/Verified';
@@ -9,7 +10,7 @@ function Discover() {
             <Container maxWidth={false} sx={{width: '1250px', maxWidth: '100%', marginTop:'10px'}}>
              <Grid container spacing={2}>
                 <Grid item md={3} sm={6} xs={12}>
-                <Box >
+              
                <Box padding={2}  sx={{  cursor: 'pointer', position: 'relative', boxShadow: '0px 0px 14px 0px rgba(0,0,0,0.32)' }}>
                   
                   <Box sx={{ position: 'relative', overflow: 'hidden', clipPath: 'polygon(50% 0%, 100% 0, 100% 100%, 18% 100%, 0 81%, 0 0)' }}>
@@ -20,10 +21,11 @@ function Discover() {
                   
                   <Box display="flex" mt={0.5} alignItems="center" color="#05947C">
                     <VerifiedIcon sx={{fontSize:'19px'}} />
-                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert <span style={{fontSize:'12px', fontWeight:'400'}}>in Engineering</span></Typography>
+                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert</Typography>
+                    <Typography variant='caption' ml={0.5}>in Engineering</Typography>
                   </Box>
                   <Box display="flex" alignItems="center" mt={1}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" data-testid="developers_icon"><path fill="#204ECF" fill-rule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clip-rule="evenodd"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" ><path fill="#204ECF" fillRule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clipRule="evenodd"></path></svg>
                     <Typography ml={1}  fontSize="13px" color="rgb(69 80 101)" >Javascript Developer</Typography>
                   </Box>
 
@@ -45,7 +47,7 @@ function Discover() {
                         <Typography  fontSize="12px" color="gray" >Node.js</Typography>
                     </Box>
 
-                  <Typography mt={2} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px' l>PREVIOUSLY AT</Typography>
+                  <Typography mt={2} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px'>PREVIOUSLY AT</Typography>
                   <Box display="flex" mt={1} sx={{ position: 'relative', }}>
                     <img src='/Discover/shopify.svg' alt="" width="45%" height="auto" />
                   </Box>
@@ -55,7 +57,7 @@ function Discover() {
                     </svg>
                   </Box>
                 </Box>
-                </Box>
+                
                 </Grid>
 
 
@@ -71,10 +73,11 @@ function Discover() {
                   
                   <Box display="flex" mt={0.5} alignItems="center" color="#05947C">
                     <VerifiedIcon sx={{fontSize:'19px'}} />
-                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert <span style={{fontSize:'12px', fontWeight:'400'}}>in Engineering</span></Typography>
+                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert</Typography>
+                    <Typography variant='caption' ml={0.5}>in Engineering</Typography>
                   </Box>
                   <Box display="flex" alignItems="center" mt={1}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" data-testid="developers_icon"><path fill="#204ECF" fill-rule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clip-rule="evenodd"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" ><path fill="#204ECF" fillRule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clipRule="evenodd"></path></svg>
                     <Typography ml={1}  fontSize="13px" color="rgb(69 80 101)" >Java Developer</Typography>
                   </Box>
 
@@ -96,7 +99,7 @@ function Discover() {
                         <Typography  fontSize="12px" color="gray" >Agile Development</Typography>
                     </Box>
 
-                  <Typography mt={1.4} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px' l>PREVIOUSLY AT</Typography>
+                  <Typography mt={1.4} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px'>PREVIOUSLY AT</Typography>
                   <Box display="flex" mt={1} sx={{ position: 'relative', }}>
                     <img src='/Discover/google.svg' alt="" width="45%" height="auto" />
                   </Box>
@@ -124,10 +127,11 @@ function Discover() {
                   
                   <Box display="flex" mt={0.5} alignItems="center" color="#05947C">
                     <VerifiedIcon sx={{fontSize:'19px'}} />
-                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert <span style={{fontSize:'12px', fontWeight:'400'}}>in Engineering</span></Typography>
+                    <Typography fontSize="14px" ml={0.5} fontWeight={600}>Verified Expert</Typography>
+                    <Typography variant='caption' ml={0.5}>in Engineering</Typography>
                   </Box>
                   <Box display="flex" alignItems="center" mt={1}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" data-testid="developers_icon"><path fill="#204ECF" fill-rule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clip-rule="evenodd"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" ><path fill="#204ECF" fillRule="evenodd" d="M10.1 1.125 6.875 15.1l-.975-.225L9.125.9l.975.225ZM1.63 8l3.074-4.1-.8-.6L.38 8l3.525 4.702.8-.6L1.63 8Zm9.674 4.103.8.6L15.63 8l-3.525-4.7-.8.6L14.38 8l-3.075 4.103Z" clipRule="evenodd"></path></svg>
                     <Typography ml={1}  fontSize="13px" color="rgb(69 80 101)" >Python Developer</Typography>
                   </Box>
 
@@ -149,7 +153,7 @@ function Discover() {
                         <Typography  fontSize="12px" color="gray" >Python</Typography>
                     </Box>
 
-                  <Typography mt={2} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px' l>PREVIOUSLY AT</Typography>
+                  <Typography mt={2} fontSize="11px" color="rgb(69 80 101)" lineHeight='19px'>PREVIOUSLY AT</Typography>
                   <Box display="flex" mt={1} sx={{ position: 'relative', }}>
                     <img src='/Discover/exon.svg' alt="" width="70%" height="auto" />
                   </Box>
@@ -180,10 +184,10 @@ function Discover() {
             <Box overflow='hidden' sx={{ zIndex: 1 }}>
               <img src='/Discover/top.svg' width='100%' height='100%'/>
             </Box>
-            <Typography variant="h6" align="center" sx={{ position: 'absolute', zIndex: 2, top: '55%', transform: 'translateY(-50%)' }}>
+            <Typography variant="h6" component="div" align="center" sx={{ position: 'absolute', zIndex: 2, top: '55%', transform: 'translateY(-50%)' }}>
             Discover 20,000+ More 
-            <Typography variant="h6">Talent</Typography>
-            <Typography>in the Toptal Network</Typography>
+            <Typography variant="subtitle1" component="div">Talent</Typography>
+            <Typography component="div">in the Toptal Network</Typography>
             <Button 
                 variant="contained"
                 sx={{
